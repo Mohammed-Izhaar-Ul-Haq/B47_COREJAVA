@@ -4,7 +4,7 @@ public class CarClass {
 	//all data members should be in lower case
 	int model;
 	String color;
-	int reg;
+	int reg=123;
 	void forward() {
 		System.out.println("car is moving forward");
 	}

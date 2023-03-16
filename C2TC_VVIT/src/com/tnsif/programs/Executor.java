@@ -7,6 +7,7 @@ public class Executor {
 		ob.forward();
 		ob.backward();
 		ob.stop();
+		System.out.println(ob.reg);
 	}
 
 }
