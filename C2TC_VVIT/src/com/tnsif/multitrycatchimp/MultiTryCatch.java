@@ -11,28 +11,25 @@ public class MultiTryCatch {
 			z=x/y;
 			try {
 				System.out.println(arr[y]);
+				try {
+					int slength=str.length();
+					System.out.println("string lenght"+slength);
+				}
+				catch(NullPointerException np) {
+					System.out.println("null pointer exception"+np);
+				}
 			}
 			catch(ArrayIndexOutOfBoundsException a) {
 				System.out.println("array index out of bound"+a);
 			}
-			try {
-				int slength=str.length();
-				System.out.println("string lenght"+slength);
-			}
-			catch(NullPointerException np) {
-				System.out.println("null pointer exception"+np);
-			}
+			
 		}
 		catch(ArithmeticException e) {
 			System.out.println("division by 0 error"+e);
 		}
-		
-		catch(Exception e) {
-			System.out.println("base class exception"+e);
-		}
-		finally {
-			System.out.println("finally block");
-		}
+		/*
+		 * finally { System.out.println("finally block"); }
+		 */
 		return z;
 	}
 
